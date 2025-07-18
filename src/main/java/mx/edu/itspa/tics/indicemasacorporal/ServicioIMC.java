@@ -20,7 +20,8 @@ public class ServicioIMC {
     }
     
     public boolean eliminarCalculo (int indice){
-        if (indice >=0 && indice < listaCalculos.size()) {
+        if(indice >= 0 && indice < listaCalculos.size()) {
+            listaCalculos.remove(indice);
             return true;
         }
         return false;
