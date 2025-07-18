@@ -44,13 +44,13 @@ public class AppIMC {
                     if (historial.isEmpty()) {
                         System.out.println("No hay cálculos registrados.");
                     } else {
-                        int index = 0;
-                        for (TareaIMC t : historial) {
-                            System.out.println(index + ". Nombre: " + t.getNombre() +
+                        for(int i = 0; i < historial.size(); i++){
+                         TareaIMC t = historial.get(i); 
+                            System.out.println(i + ". Nombre: " + t.getNombre() +
                                     ", Fecha: " + t.getFecha() +
                                     ", IMC: " + t.getImc() +
                                     ", Clasificación: " + t.getResultado());
-                            index++;
+                            
                         }
                     }
                     break;
